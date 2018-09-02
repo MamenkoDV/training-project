@@ -5,14 +5,30 @@
 <meta charset="utf-8">
 <script>
 function  addSongs() {
+
 var song1 = document.getElementById("song1");
+
 var song2 = document.getElementById("song2");
+
 var song3 = document.getElementById("song3");
-song1.innerHTML = "Blue Suede Strings, by Elvis Pagely";
+song1.innerHTML  = "Blue Suede Strings, by Elvis Pagely";
 song2.innerHTML = "Great Objects on Fire, by Jerry JSON Lewis";
 song3.innerHTML = "I Code the Line, by Johnny JavaScript";
 }
+// pole.onmousedown = function (e) {this.value +="kykaracha nazhal knopky\n"; this.scrollTop = this.scrollHeight; }
+// pole.onmouseup = function (e) {this.value +="kykaracha otzhal knopky\n"; this.scrollTop = this.scrollHeight; }
+// pole.onclick = function (e) {this.value +="klac klac\n"; this.scrollTop = this.scrollHeight; }
+function pluha () {
+
+
+  area.onmousedown = function(e) { this.value += "mousedown\n"; this.scrollTop = this.scrollHeight; };
+  area.onmouseup = function(e) { this.value += "mouseup\n"; this.scrollTop = this.scrollHeight; };
+  area.onclick = function(e) { this.value += "click\n"; this.scrollTop = this.scrollHeight; };
+}
+
 window.onload=addSongs;
+window.onload =pluha;
+
 </script>
 </head>
 <body>
@@ -21,6 +37,10 @@ window.onload=addSongs;
 <li id="song1"></li>
 <li id="song2"></li>
 <li id="song3"></li>
+
 </ul>
+<textarea rows="8" cols ="30" id ="area">
+	Push the Button
+	</textarea>
 </body>
 </html>
