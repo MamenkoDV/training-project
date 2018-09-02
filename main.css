@@ -1,0 +1,14 @@
+p {
+  color: red;
+  font-size: 25px;
+}
+h1#article-title {
+  font-family: Georgia, serif;
+  color: #2d0606;
+  font-size: 50px;
+}
+.important {
+  color: green;
+  font-style: italic;
+  font-size: 35px;
+}
